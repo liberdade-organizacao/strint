@@ -2,6 +2,10 @@
 
 String formatting with hashmaps in Clojure
 
+## Installation
+
+Check [Clojars](https://clojars.org/org.clojars.liberdade/strint)
+
 ## Usage
 
 ``` clj

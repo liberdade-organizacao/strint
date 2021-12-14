@@ -1,14 +1,26 @@
-# br.bsb.liberdade.strint
+# Clojure String Interpolation
 
-A Clojure library designed to ... well, that part is up to you.
+String formatting with hashmaps in Clojure
 
 ## Usage
 
-FIXME
+``` clj
+(require '[br.bsb.liberdade.strint :as strint])
+
+(def parameters
+    {"name" "Joe"
+     "age"  27})
+
+(def string-to-interpolate
+    "Hello, my name is %{name} and I am %{age} years old.")
+
+(strint/strint string-to-interpolate parameters)
+;; => "Hello, my name is Joe and I am 27 years old."
+```
 
 ## License
 
-Copyright © 2021 FIXME
+Copyright © 2021 Liberdade Controle & Automação
 
 This program and the accompanying materials are made available under the
 terms of the Eclipse Public License 2.0 which is available at
